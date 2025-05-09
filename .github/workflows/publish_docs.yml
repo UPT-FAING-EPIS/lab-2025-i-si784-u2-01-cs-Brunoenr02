@@ -21,7 +21,6 @@ jobs:
 
     - name: Restore & Build
       run: |
-        cd MyMath
         docfx restore
         docfx build
 
