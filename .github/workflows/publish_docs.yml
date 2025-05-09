@@ -1,4 +1,4 @@
-name: Build/Deploy DocFX to GitHub Pages
+name: Actividad-02 Build/Deploy DocFX a GitHubPages
 
 on:
   push:
