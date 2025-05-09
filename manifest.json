@@ -11,6 +11,47 @@
       }
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Math.Lib.Rooter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Math.Lib.Rooter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Math.Lib.Rooter",
+      "Summary": "<p sourcefile=\"api/Math.Lib.Rooter.yml\" sourcestartlinenumber=\"1\">proporciona metodos para calcular raices cuadradas</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Math.Lib.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Math.Lib.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Math.Lib",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/getting-started.md",
       "output": {
