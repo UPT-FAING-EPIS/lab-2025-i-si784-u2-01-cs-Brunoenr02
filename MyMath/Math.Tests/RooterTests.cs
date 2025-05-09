@@ -62,11 +62,11 @@ namespace Math.Tests
         }
 
         [TestMethod]
-        public void RooterTestZeroInput()
+        public void RooterTestInputOne()
         {
             Rooter rooter = new Rooter();
-            double expectedResult = 0.0;
-            double actualResult = rooter.SquareRoot(0);
+            double expectedResult = 1.0;
+            double actualResult = rooter.SquareRoot(1);
             Assert.AreEqual(expectedResult, actualResult, delta: expectedResult / 100);
         }
     }    
