@@ -60,5 +60,14 @@ namespace Math.Tests
                 StringAssert.Contains(ex.Message, "El valor ingresado es invalido, solo se puede ingresar números positivos");
             }
         }
+
+        [TestMethod]
+        public void RooterTestZeroInput()
+        {
+            Rooter rooter = new Rooter();
+            double expectedResult = 0.0;
+            double actualResult = rooter.SquareRoot(0);
+            Assert.AreEqual(expectedResult, actualResult, delta: expectedResult / 100);
+        }
     }    
 }
