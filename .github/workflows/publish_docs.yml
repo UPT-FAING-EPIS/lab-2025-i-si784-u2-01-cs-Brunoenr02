@@ -22,8 +22,8 @@ jobs:
     - name: Restore & Build
       run: |
         cd MyMath
-        docfx restore
-        docfx build
+        docfx restore -c docfx.json
+        docfx build -c docfx.json
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
