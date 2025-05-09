@@ -17,17 +17,7 @@
     "content": [
       {
         "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "_site/**"
-        ]
-      },
-      {
-        "files": [
-          "Math.Lib/**/*.cs",
-          "Math.Tests/**/*.cs"
+          "docs/**/*.md"
         ],
         "exclude": [
           "_site/**"

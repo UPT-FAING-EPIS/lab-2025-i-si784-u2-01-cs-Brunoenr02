@@ -19,13 +19,12 @@ jobs:
     - name: Install DocFX
       run: dotnet tool install -g docfx
 
-    - name: Restore & Build
-      run: |
-        docfx restore
-        docfx build
+    - name: Build DocFX site
+      run: docfx build
+      working-directory: MyMath
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
+        publish_dir: ./MyMath/_site
