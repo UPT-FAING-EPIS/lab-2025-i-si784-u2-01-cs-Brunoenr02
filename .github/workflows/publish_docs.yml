@@ -19,6 +19,10 @@ jobs:
     - name: Install DocFX
       run: dotnet tool install -g docfx
 
+    - name: Generate API Metadata
+      run: docfx metadata
+      working-directory: MyMath
+
     - name: Build DocFX site
       run: docfx build
       working-directory: MyMath
