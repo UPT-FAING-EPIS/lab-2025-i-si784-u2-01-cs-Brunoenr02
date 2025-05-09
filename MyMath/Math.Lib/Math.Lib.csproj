@@ -3,7 +3,7 @@
   <PropertyGroup>
     <PackageId>Math.Lib</PackageId>
     <TargetFramework>net8.0</TargetFramework>
-    <Version>2023077472</Version>
+    <Version>2023.07.7472</Version>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Authors>Brunoenr02</Authors>
