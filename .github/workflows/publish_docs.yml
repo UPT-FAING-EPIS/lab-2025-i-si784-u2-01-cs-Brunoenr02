@@ -1,4 +1,4 @@
-name: Build/Deploy DocFX a GitHubPages
+name: Build/Deploy DocFX to GitHub Pages
 
 on:
   push:
@@ -16,10 +16,10 @@ jobs:
       with:
         dotnet-version: '8.0.x'
 
-    - name: Instalar DocFX
+    - name: Install DocFX
       run: dotnet tool install -g docfx
 
-    - name: Generar API Metadata
+    - name: Generate API Metadata
       run: docfx metadata
       working-directory: MyMath
 
@@ -33,3 +33,5 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./MyMath/_site
         publish_branch: gh-pages
+        user_name: 'GitHub Actions'
+        user_email: 'github-actions@users.noreply.github.com'
