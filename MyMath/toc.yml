@@ -1,4 +1,6 @@
-- name: Docs
-  href: docs/
+- name: Inicio
+  href: index.md
+- name: Documentación
+  href: docs/toc.yml
 - name: API
-  href: api/
+  href: api/index.md
