@@ -4,10 +4,8 @@
     {
       "src": [
         {
-          "src": "Math.Lib",
-          "files": [
-            "**/*.csproj"
-          ]
+          "files": [ "**/*.csproj" ],
+          "src": "Math.Lib"
         }
       ],
       "dest": "api"
@@ -16,19 +14,16 @@
   "build": {
     "content": [
       {
-        "files": [
-          "docs/**/*.md"
-        ],
-        "exclude": [
-          "_site/**"
-        ]
+        "files": [ "docs/**/*.md" ],
+        "exclude": [ "_site/**" ]
+      },
+      {
+        "files": [ "api/**.yml", "api/index.md" ]
       }
     ],
     "resource": [
       {
-        "files": [
-          "images/**"
-        ]
+        "files": [ "images/**" ]
       }
     ],
     "output": "_site",
