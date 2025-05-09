@@ -44,6 +44,9 @@ jobs:
         reportgenerator "-reports:**/coverage.cobertura.xml" "-targetdir:coverage-report" -reporttypes:HTML
       working-directory: MyMath
 
+    - name: Pull latest gh-pages branch (optional)
+      run: git pull origin gh-pages || echo "No gh-pages branch to pull"
+
     - name: Publish coverage report to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
@@ -51,4 +54,10 @@ jobs:
         publish_dir: MyMath/coverage-report
         user_name: 'github-actions'
         user_email: 'github-actions@github.com'
-        extra_args: '--force'
+        publish_branch: gh-pages
+        allow_empty_commit: false
+        keep_files: false
+        force_orphan: false
+        enable_jekyll: false
+        disable_nojekyll: false
+        exclude_assets: .github
